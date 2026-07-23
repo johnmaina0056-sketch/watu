@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Watu Global</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+</head>
+
+<body style="padding: 2%;">
+
+<!--================ NAVBAR ================-->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <h2 style="color: white;">Watu</h2>
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#markets">Our Markets</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#impact">Our Impact</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+        <div class="menu-btn">
+            <i class='bx bx-menu'></i>
+        </div>
+
+    </nav>
+
+</header>
+
+<!-- Mobile Sidebar -->
+
+<div class="sidebar">
+
+    <div class="close-btn">
+        <i class='bx bx-x'></i>
+    </div>
+
+    <a href="#home">Home</a>
+
+    <a href="#markets">
+        Our Markets
+    </a>
+
+    <a href="#about">
+        About Us
+    </a>
+
+    <a href="#impact">
+        Our Impact
+    </a>
+
+    <a href="#contact">
+        Contact
+    </a>
+
+</div>
+
+<div class="overlay"></div>
+
+<!--================ HERO ================-->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1>
+            Connectivity.<br>
+            Mobility.<br>
+            Opportunity.
+        </h1>
+
+        <p>
+
+            Asset financing for motorcycles,
+            three-wheelers and smartphones used
+            for work and everyday connectivity.
+
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#markets" class="btn primary">
+                Our Markets
+            </a>
+
+            <a href="#about" class="btn secondary">
+                About Us
+            </a>
+
+        </div>
+
+    </div>
+
+    
+
+</section>
+<!--==================== MARKETS ====================-->
+
+<style>
+
+    .hero{
+
+    min-height:100vh;
+
+    display:grid;
+    grid-template-columns:1fr;
+    place-items:center;
+
+    width:100%;
+
+    background:
+        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+        url("https://watu.com/wp-content/uploads/Kenya-Hero-1536x768.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    text-align:center;
+
+    padding:120px 8% 60px;
+
+}
+
+.hero-content{
+
+    max-width:700px;
+
+    color:#fff;
+
+}
+
+.hero-content h1{
+
+    font-size:65px;
+
+    color:#fff;
+
+    line-height:1.1;
+
+}
+
+.hero-content p{
+
+    margin:30px 0;
+
+    color:#f3f4f6;
+
+    font-size:20px;
+
+    line-height:1.7;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+@media(max-width:900px){
+
+    .hero{
+
+        padding-top:140px;
+
+    }
+
+    .hero-content h1{
+
+        font-size:42px;
+
+    }
+
+    .hero-content p{
+
+        font-size:16px;
+
+    }
+
+}
+    /*==================== KENYA HERO ====================*/
+
+.kenya-hero{
+
+    min-height:100vh;
+
+    display:grid;
+    place-items:center;
+
+    text-align:center;
+
+    position:relative;
+
+    background:
+        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+        url("https://watu.com/wp-content/uploads/Kenya-Hero-1536x768.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    color:#fff;
+
+}
+
+.kenya-hero .hero-content{
+
+    max-width:700px;
+    padding:20px;
+    z-index:2;
+
+}
+
+.country-tag{
+
+    display:inline-block;
+
+    padding:8px 20px;
+
+    background:#16a34a;
+
+    color:#fff;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+.kenya-hero h1{
+
+    font-size:70px;
+
+    line-height:1.1;
+
+    color:#fff;
+
+    margin-bottom:20px;
+
+}
+
+.kenya-hero p{
+
+    font-size:20px;
+
+    color:#f5f5f5;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+.kenya-hero .hero-buttons{
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+
+}
+
+@media(max-width:768px){
+
+    .kenya-hero h1{
+
+        font-size:44px;
+
+    }
+
+    .kenya-hero p{
+
+        font-size:17px;
+
+    }
+
+}
+
+/* Floating Contact Buttons */
+.floating-contact{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 9999;
+}
+
+.float-btn{
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 28px;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,.25);
+    transition: .3s ease;
+    animation: pulse 2s infinite;
+}
+
+.float-btn:hover{
+    transform: scale(1.12);
+}
+
+.whatsapp{
+    background: #25D366;
+}
+
+.call{
+    background: #007BFF;
+}
+
+@keyframes pulse{
+    0%{
+        box-shadow: 0 0 0 0 rgba(0,0,0,.35);
+    }
+    70%{
+        box-shadow: 0 0 0 18px rgba(0,0,0,0);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(0,0,0,0);
+    }
+}
+
+@media(max-width:768px){
+    .floating-contact{
+        right: 15px;
+        bottom: 15px;
+    }
+
+    .float-btn{
+        width: 52px;
+        height: 52px;
+        font-size: 24px;
+    }
+}
+</style>
+<!--==================== ABOUT ====================-->
+<!-- Floating Contact Buttons -->
+<div class="floating-contact">
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/254762290163"
+       class="float-btn whatsapp"
+       target="_blank"
+       aria-label="Chat on WhatsApp">
+        <i class='bx bxl-whatsapp'></i>
+    </a>
+
+    <!-- Call -->
+    <a href="tel:+254762290163"
+       class="float-btn call"
+       aria-label="Call Us">
+        <i class='bx bxs-phone-call'></i>
+    </a>
+
+</div>
+
+   
+<!--==================== MARKETS ====================-->
+
+<section class="markets" id="markets">
+
+    <div class="section-title">
+        <h2>Our Markets</h2>
+        <p>Fast, flexible and transparent financing across multiple countries.</p>
+    </div>
+
+    <div class="market-grid">
+
+        <a href="kenya.html" class="market-card">
+            <img src="https://flagcdn.com/w160/ke.png" alt="Kenya Flag">
+            <h3>Kenya</h3>
+        </a>
+
+        <a href="tanzania.html" class="market-card">
+            <img src="https://flagcdn.com/w160/tz.png" alt="Tanzania Flag">
+            <h3>Tanzania</h3>
+        </a>
+
+        <a href="uganda.html" class="market-card">
+            <img src="https://flagcdn.com/w160/ug.png" alt="Uganda Flag">
+            <h3>Uganda</h3>
+        </a>
+
+        <a href="rwanda.html" class="market-card">
+            <img src="https://flagcdn.com/w160/rw.png" alt="Rwanda Flag">
+            <h3>Rwanda</h3>
+        </a>
+
+        <a href="drc.html" class="market-card">
+            <img src="https://flagcdn.com/w160/cd.png" alt="DRC Flag">
+            <h3>DRC</h3>
+        </a>
+
+        <a href="nigeria.html" class="market-card">
+            <img src="https://flagcdn.com/w160/ng.png" alt="Nigeria Flag">
+            <h3>Nigeria</h3>
+        </a>
+
+        <a href="leone.html" class="market-card">
+            <img src="https://flagcdn.com/w160/sl.png" alt="Sierra Leone Flag">
+            <h3>Sierra Leone</h3>
+        </a>
+
+        <a href="south.html" class="market-card">
+            <img src="https://flagcdn.com/w160/za.png" alt="South Africa Flag">
+            <h3>South Africa</h3>
+        </a>
+
+  
+
+    </div>
+
+</section>
+<!--==================== ABOUT ====================-->
+
+<section class="about" id="about">
+
+ 
+
+    <div class="about-content">
+
+        <span>About Watu</span>
+
+        <h2>
+            At Watu,<br>
+            people come first
+        </h2>
+
+        <p>
+
+            Our financing is designed around how assets are used day to day:
+            on the road, in small businesses and for staying connected.
+
+        </p>
+
+        <p>
+
+            A leading asset financier focused on mobility and connectivity.
+            Watu provides financing for motorcycles, three-wheelers and
+            smartphones across multiple markets through systems built for
+            scale, reliability and long-term value.
+
+        </p>
+
+        <a href="#" class="btn primary">
+            Learn More
+        </a>
+
+    </div>
+
+</section>
+
+<section class="services" id="services">
+
+    <div class="section-title">
+
+        <h2>How do we do it?</h2>
+
+        <p>
+
+            Through streamlined onboarding,
+            flexible repayment structures
+            and local market expertise.
+
+        </p>
+
+    </div>
+
+    <div class="service-grid">
+
+        <div class="service-card">
+
+            <i class='bx bx-user-check'></i>
+
+            <h3>Quick Onboarding</h3>
+
+            <p>
+                Fast approval processes that keep
+                customers moving.
+            </p>
+
+        </div>
+
+        <div class="service-card">
+
+            <i class='bx bx-wallet'></i>
+
+            <h3>Flexible Payments</h3>
+
+            <p>
+
+                Repayment schedules designed
+                around everyday income.
+
+            </p>
+
+        </div>
+
+        <div class="service-card">
+
+            <i class='bx bx-world'></i>
+
+            <h3>Local Expertise</h3>
+
+            <p>
+
+                Teams that understand each
+                market and customer.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="impact" id="impact">
+
+    <div class="section-title">
+
+        <h2>
+            Impact, measured through access and scale
+        </h2>
+
+        <p>
+
+            We help millions turn ambition
+            into action by unlocking access
+            to essential assets.
+
+        </p>
+
+    </div>
+
+    <div class="stat">
+
+    <div class="stat-icon">
+        <i class='bx bx-dollar-circle'></i>
+    </div>
+
+    <h1 class="counter" data-target="1">0</h1>
+
+    <span>B+</span>
+
+    <p>Credit Unlocked</p>
+
+</div>
+
+<div class="stat">
+
+    <div class="stat-icon">
+        <i class='bx bx-group'></i>
+    </div>
+
+    <h1 class="counter" data-target="18">0</h1>
+
+    <span>M+</span>
+
+    <p>People Impacted</p>
+
+</div>
+
+<div class="stat">
+
+    <div class="stat-icon">
+        <i class='bx bx-wallet'></i>
+    </div>
+
+    <h1 class="counter" data-target="6">0</h1>
+
+    <span>M+</span>
+
+    <p>Loans Disbursed</p>
+
+</div>
+
+<div class="stat">
+
+    <div class="stat-icon">
+        <i class='bx bx-world'></i>
+    </div>
+
+    <h1 class="counter" data-target="10">0</h1>
+
+    <span>+</span>
+
+    <p>Countries & Growing</p>
+
+</div>
+
+</section>
+<!--==========================
+REAL PEOPLE. REAL SUPPORT.
+===========================-->
+
+<section class="real-support">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <h2>
+                Real people.<br>
+                Real support.
+            </h2>
+
+            <p>
+                Our customers trust Watu because we make it easier to get
+                started and stay connected.
+            </p>
+
+        </div>
+
+        <!-- TESTIMONIAL -->
+
+        <div class="testimonial-wrapper">
+
+            <button class="testimonial-arrow prev">
+                <i class='bx bx-chevron-left'></i>
+            </button>
+
+            <div class="testimonial-slider">
+
+    <!-- Testimonial 1 -->
+
+    <div class="testimonial active">
+
+        <p class="quote">
+            "Watu has uplifted me financially. The asset has assisted in
+            catering for family needs and I have been able to build two
+            rental rooms from the bike's income."
+        </p>
+
+       
+        <h4>Douglas Monyancha Onyambu</h4>
+
+        <span>Boda Boda Driver, Kenya 🇰🇪</span>
+
+    </div>
+
+    <!-- Testimonial 2 -->
+
+    <div class="testimonial">
+
+        <p class="quote">
+            "With my phone from Watu, I check market prices, talk to buyers,
+            and learn new farming tips on YouTube. It's changed how I do
+            business."
+        </p>
+
+       
+        <h4>Lydia Wambui</h4>
+
+        <span>Farmer, Kenya 🇰🇪</span>
+
+    </div>
+
+    <!-- Testimonial 3 -->
+
+    <div class="testimonial">
+
+        <p class="quote">
+            "Before Watu, I used a small kabambe that couldn't support apps.
+            Now with my smartphone, I get orders on WhatsApp, follow maps,
+            and talk to customers directly."
+        </p>
+
+        
+        <h4>Kevin Otieno</h4>
+
+        <span>Boda Rider, Kenya 🇰🇪</span>
+
+    </div>
+
+    <!-- Testimonial 4 -->
+
+    <div class="testimonial">
+
+        <p class="quote">
+            "Through the bike I have from Watu, I am currently financing a
+            plot of land in Juja. My aim is to acquire a second bike and
+            employ someone else to generate extra income."
+        </p>
+
+        
+        <h4>David Kariuki Macharia</h4>
+
+        <span>Boda Boda Driver, Kenya 🇰🇪</span>
+
+    </div>
+
+    <!-- Testimonial 5 -->
+
+    <div class="testimonial">
+
+        <p class="quote">
+            "Watu has uplifted me financially. The asset has assisted in
+            catering for family needs and I have been able to build two
+            rental rooms from the bike's income."
+        </p>
+
+       
+        <h4>Douglas Monyancha Onyambu</h4>
+
+        <span>Boda Boda Driver, Kenya 🇰🇪</span>
+
+    </div>
+
+</div>
+
+
+            <button class="testimonial-arrow next">
+                <i class='bx bx-chevron-right'></i>
+            </button>
+
+        </div>
+
+        <!-- SUPPORT BOXES -->
+
+        <div class="support-grid">
+
+            <div class="support-card yellow">
+
+                <div>
+
+                    <h3>Need assistance?</h3>
+
+                    <p>
+                        Our team is here to support you.
+                        Contact us for help.
+                    </p>
+
+                    <a href="#" class="support-btn">
+
+                        Contact Us
+
+                    </a>
+
+                </div>
+
+                <img src="images/support.png">
+
+            </div>
+
+            <div class="support-card white">
+
+                <h3>Any questions?</h3>
+
+                <p>
+
+                    Find answers to common
+                    questions in our FAQs.
+
+                </p>
+
+                <a href="#" class="support-btn light">
+
+                    Browse FAQs
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--====================================
+AT WATU PEOPLE COME FIRST
+=====================================-->
+
+<section class="people-first">
+
+    <div class="container">
+
+        <div class="people-heading">
+
+            <h2>
+                At Watu,<br>
+                people come first
+            </h2>
+
+            <p>
+
+                Our financing is built around your needs:
+                quick, affordable and transparent,
+                trusted by millions every day.
+
+            </p>
+
+        </div>
+
+        <!-- FEATURE CARDS -->
+
+        <div class="feature-grid">
+
+            <div class="feature-box">
+
+                <i class='bx bx-check-circle'></i>
+
+                <h3>Built for Everyday Kenyans</h3>
+
+                <p>
+
+                    Watu helps people level up without
+                    high upfront costs or complicated steps.
+
+                </p>
+
+            </div>
+
+            <div class="feature-box">
+
+                <i class='bx bx-world'></i>
+
+                <h3>Trusted & Local</h3>
+
+                <p>
+
+                    We are trusted by millions and
+                    rooted in communities across Africa.
+
+                </p>
+
+            </div>
+
+            <div class="feature-box">
+
+                <i class='bx bx-wallet'></i>
+
+                <h3>Easy Access. Better Life.</h3>
+
+                <p>
+
+                    Own your motorcycle today and
+                    pay comfortably over time.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- INFO SECTION -->
+
+        <div class="watu-info">
+
+            <div class="info-left">
+
+                <span>Watu</span>
+
+                <h2>
+
+                    We've helped millions across Africa
+                    get access to the tools they need.
+
+                </h2>
+
+                <p>
+
+                    Watu provides simple, flexible financing
+                    for motorcycles and mobility assets that
+                    help people work, earn and stay connected.
+
+                </p>
+
+            </div>
+
+            <div class="info-right">
+
+                <div class="info-card">
+
+                    <i class='bx bx-globe'></i>
+
+                    <div>
+
+                        <h4>Operating in 8 African Countries</h4>
+
+                        <p>Serving millions across the continent.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="info-card">
+
+                    <i class='bx bx-group'></i>
+
+                    <div>
+
+                        <h4>Over 6 Million Assets Financed</h4>
+
+                        <p>Helping customers grow every day.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="info-card">
+
+                    <i class='bx bx-time'></i>
+
+                    <div>
+
+                        <h4>Approval in Under 2 Hours</h4>
+
+                        <p>Fast onboarding process.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="info-card">
+
+                    <i class='bx bx-support'></i>
+
+                    <div>
+
+                        <h4>Real Support</h4>
+
+                        <p>Local teams ready to assist.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- IMAGE -->
+
+        <div class="people-image">
+
+            <img src="about.jpg" alt="Watu Customers">
+
+        </div>
+
+    </div>
+
+
+
+
+</section>
+<!--================ FOOTER ================-->
+
+<footer id="contact">
+
+    <div class="footer-container">
+
+
+        <!-- Brand -->
+
+        <div class="footer-brand">
+
+            <div class="footer-logo">
+                watu
+            </div>
+
+            <p>
+                Watu HQ,<br>
+                Lower Hill Rd,<br>
+                Nairobi, Kenya
+            </p>
+
+        </div>
+
+
+
+        <!-- Watu Global -->
+
+        <div class="footer-section">
+
+            <h4>WATU GLOBAL</h4>
+
+            <div class="footer-links">
+
+                <a href="#">Home</a>
+
+                <a href="#">Our Markets</a>
+
+                <a href="#">About Us</a>
+
+                <a href="#">Our Impact</a>
+
+                <a href="#">Contact Us</a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Markets -->
+
+        <div class="footer-section">
+
+            <h4>OUR MARKETS</h4>
+
+            <div class="footer-links">
+
+                <a href="kenya.html">Kenya</a>
+<a href="tanzania.html">Tanzania</a>
+<a href="uganda.html">Uganda</a>
+<a href="rwanda.html">Rwanda</a>
+<a href="drc.html">DRC</a>
+<a href="nigeria.html">Nigeria</a>
+<a href="sierra-leone.html">Sierra Leone</a>
+<a href="south-africa.html">South Africa</a>
+<a href="mexico.html">Mexico</a>
+<a href="brazil.html">Brazil</a>
+            </div>
+
+        </div>
+
+
+
+        <!-- Company -->
+
+        <div class="footer-section">
+
+            <h4>COMPANY</h4>
+
+            <div class="footer-links">
+
+                <a href="#">Home</a>
+
+                <a href="#">About Us</a>
+
+                <a href="#">Impact</a>
+
+                <a href="#">Newsroom</a>
+
+                <a href="#">Careers</a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Social -->
+
+        <div class="footer-social">
+
+            <span>Follow Us</span>
+
+
+            <a href="#">
+
+                <i class='bx bxl-linkedin'></i>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- Bottom -->
+
+        <div class="footer-bottom">
+
+
+            <p>
+                © 2026 Watu Holdings
+            </p>
+
+
+            <div class="legal-links">
+
+                <a href="#">
+                    Customer Service Statement
+                </a>
+
+
+                <a href="#">
+                    Data Privacy Statement
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</footer>
+<style>
+  /*==================== IMPACT ====================*/
+/*==================== IMPACT ====================*/
+
+.impact{
+
+    padding:120px 8%;
+    background:#f7fff9;
+
+}
+
+
+.stats{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+
+.stat{
+
+    position:relative;
+
+    background:#ffffff;
+
+    border-radius:24px;
+
+    padding:45px 25px;
+
+    text-align:center;
+
+    overflow:hidden;
+
+    border:1px solid #d9f2e3;
+
+    box-shadow:0 15px 35px rgba(16,185,129,.12);
+
+    transition:.35s;
+
+}
+
+
+.stat::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:6px;
+
+    background:#16a34a;
+
+}
+
+
+.stat:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 50px rgba(16,185,129,.22);
+
+}
+
+
+.stat-icon{
+
+    width:75px;
+    height:75px;
+
+    margin:0 auto 20px;
+
+    border-radius:50%;
+
+    background:#dcfce7;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+.stat-icon i{
+
+    font-size:38px;
+
+    color:#16a34a;
+
+}
+
+
+.stat h1{
+
+    font-size:58px;
+
+    color:#15803d;
+
+    line-height:1;
+
+    display:inline-block;
+
+}
+
+
+.stat span{
+
+    font-size:25px;
+
+    font-weight:700;
+
+    color:#16a34a;
+
+}
+
+
+.stat p{
+
+    margin-top:15px;
+
+    color:#555;
+
+    font-weight:500;
+
+}
+    </style>
+    <script>
+const counters = document.querySelectorAll(".counter");
+
+let started = false;
+
+
+function startCounters(){
+
+    if(started) return;
+
+    started = true;
+
+
+    counters.forEach(counter => {
+
+        let target = Number(counter.dataset.target);
+
+        let count = 0;
+
+        let speed = target / 80;
+
+
+        function updateCounter(){
+
+            if(count < target){
+
+                count += speed;
+
+                counter.innerText = Math.ceil(count);
+
+                setTimeout(updateCounter,25);
+
+            }else{
+
+                counter.innerText = target;
+
+            }
+
+        }
+
+
+        updateCounter();
+
+    });
+
+}
+
+
+
+// Detect when impact section appears
+
+const impactSection = document.querySelector(".impact");
+
+
+const observer = new IntersectionObserver((entries)=>{
+
+
+    entries.forEach(entry=>{
+
+
+        if(entry.isIntersecting){
+
+            startCounters();
+
+            observer.disconnect();
+
+        }
+
+
+    });
+
+
+},{
+
+    threshold:0.35
+
+});
+
+
+observer.observe(impactSection);
+    </script>
+
+<script>
+    const menuBtn = document.querySelector(".menu-btn");
+const sidebar = document.querySelector(".sidebar");
+const closeBtn = document.querySelector(".close-btn");
+const overlay = document.querySelector(".overlay");
+
+menuBtn.onclick = () => {
+
+    sidebar.classList.add("active");
+    overlay.classList.add("show");
+
+};
+
+closeBtn.onclick = () => {
+
+    sidebar.classList.remove("active");
+    overlay.classList.remove("show");
+
+};
+
+overlay.onclick = () => {
+
+    sidebar.classList.remove("active");
+    overlay.classList.remove("show");
+
+};
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const slides = document.querySelectorAll(".testimonial");
+    const prev = document.querySelector(".testimonial-arrow.prev");
+    const next = document.querySelector(".testimonial-arrow.next");
+
+    if (!slides.length) return;
+
+    let current = 0;
+    let interval;
+
+    function showSlide(index) {
+
+        slides.forEach(slide => {
+            slide.classList.remove("active");
+        });
+
+        slides[index].classList.add("active");
+    }
+
+    function nextSlide() {
+        current = (current + 1) % slides.length;
+        showSlide(current);
+    }
+
+    function prevSlide() {
+        current = (current - 1 + slides.length) % slides.length;
+        showSlide(current);
+    }
+
+    function startAutoSlide() {
+
+        clearInterval(interval);
+
+        interval = setInterval(() => {
+
+            nextSlide();
+
+        }, 4000);
+
+    }
+
+    // Next button
+    if (next) {
+        next.addEventListener("click", () => {
+            nextSlide();
+            startAutoSlide();
+        });
+    }
+
+    // Previous button
+    if (prev) {
+        prev.addEventListener("click", () => {
+            prevSlide();
+            startAutoSlide();
+        });
+    }
+
+    // Pause when hovering over the card
+    const wrapper = document.querySelector(".testimonial-wrapper");
+
+    if (wrapper) {
+
+        wrapper.addEventListener("mouseenter", () => {
+            clearInterval(interval);
+        });
+
+        wrapper.addEventListener("mouseleave", () => {
+            startAutoSlide();
+        });
+
+    }
+
+    showSlide(current);
+
+    startAutoSlide();
+
+});
+</script>
+</body>
+</html>

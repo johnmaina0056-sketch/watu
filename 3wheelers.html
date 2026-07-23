@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Watu Global</title>
+<style>
+    .bike-process{
+
+padding:90px 8%;
+
+background:#d5f3f3;
+
+}
+
+.process-grid{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:20px;
+
+margin-top:50px;
+
+}
+
+.process-card{
+
+background:#fff;
+
+padding:30px;
+
+border-radius:18px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+position:relative;
+
+}
+
+.number{
+
+width:35px;
+
+height:35px;
+
+border-radius:50%;
+
+background:#16b2b5;
+
+color:#fff;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-weight:700;
+
+margin-bottom:20px;
+
+}
+
+.process-card i{
+
+font-size:40px;
+
+color:#16b2b5;
+
+margin-bottom:20px;
+
+}
+
+.apply-card{
+
+background:#16b2b5;
+
+color:#fff;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+}
+
+.requirements{
+
+padding:80px 8%;
+
+}
+
+.requirements-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:20px;
+
+margin-top:40px;
+
+}
+
+.req-card{
+
+border:2px solid #16b2b5;
+
+border-radius:15px;
+
+padding:25px;
+
+background:#fff;
+
+}
+
+.req-card i{
+
+font-size:34px;
+
+color:#16b2b5;
+
+margin-bottom:15px;
+
+}
+
+.bike-app{
+
+padding:80px 8%;
+
+background:#d5f3f3;
+
+}
+
+.app-card{
+
+background:#fff;
+
+border-radius:20px;
+
+padding:40px;
+
+display:grid;
+
+grid-template-columns:2fr 1fr;
+
+align-items:center;
+
+gap:40px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.app-card img{
+
+width:170px;
+
+justify-self:end;
+
+}
+
+@media(max-width:991px){
+
+.process-grid,
+
+.requirements-grid,
+
+.app-card{
+
+grid-template-columns:1fr;
+
+}
+
+.app-card img{
+
+justify-self:center;
+
+margin-top:20px;
+
+}
+
+}
+</style>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+</head>
+
+<body style="padding: 2%;">
+
+<!--================ NAVBAR ================-->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <h2 style="color: white;">Watu</h2>
+        </div>
+
+    <ul class="nav-links">
+
+    <li><a href="#home">Home</a></li>
+
+    <li><a href="#financing">Financing</a></li>
+
+    <li><a href="#mobility">Mobility Financing</a></li>
+
+    <li><a href="#phones">Phone Financing</a></li>
+
+    <li><a href="#support">Support</a></li>
+
+    <li><a href="#blog">Blog</a></li>
+
+    <li><a href="#app">App</a></li>
+
+</ul>
+
+        <div class="menu-btn">
+            <i class='bx bx-menu'></i>
+        </div>
+
+    </nav>
+
+</header>
+
+<!-- Mobile Sidebar -->
+
+<div class="sidebar">
+
+    <div class="close-btn">
+        <i class='bx bx-x'></i>
+    </div>
+
+    <a href="#home">
+        Home
+    </a>
+
+    <a href="#financing">
+        Financing
+    </a>
+
+    <a href="#mobility">
+        Mobility Financing
+    </a>
+
+    <a href="#phones">
+        Phone Financing
+    </a>
+
+    <a href="#support">
+        Support
+    </a>
+
+    <a href="#blog">
+        Blog
+    </a>
+
+    <a href="#app">
+        App
+    </a>
+
+</div>
+
+<div class="overlay"></div>
+
+<!--==================== MOTORCYCLE FINANCING ====================-->
+
+<section class="bike-financing" id="products">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                Fast, Flexible &<br>
+                Transparent Motorcycle Financing
+            </h2>
+
+            <p>
+                Choose a motorcycle, electric bike or tuk tuk that fits your
+                business and get financed by Watu in as little as 2 hours.
+            </p>
+
+        </div>
+<div class="bike-slider">
+
+    <!-- CARD 1 -->
+    <div class="bike-card">
+
+        <div class="bike-image">
+            <img src="tuk1.jfif" alt="Motorbike">
+        </div>
+
+        <div class="bike-content">
+
+            <span class="bike-brand">WATU CREDIT</span>
+
+            <h3>Motorbike Financing</h3>
+
+            <p class="bike-description">
+
+                <strong>Brand New Bike:</strong><br>
+                Deposit: KSh 15,000<br>
+                Daily Payment: KSh 250<br><br>
+
+                <strong>Second-Hand Bike:</strong><br>
+                Deposit: KSh 7,700<br>
+                Daily Payment: KSh 150<br><br>
+
+                <strong>Package Includes:</strong><br>
+                ✅ KSh 3,000 Fuel Voucher<br>
+                ✅ 2 Litres of Engine Oil<br>
+                ✅ 2 Helmets<br>
+                ✅ 2 Reflectors
+
+            </p>
+
+            <div class="bike-buttons">
+
+                <a href="tel:0762290163" class="btn primary">
+                    Call Now
+                </a>
+
+                <a href="https://wa.me/254762290163" class="btn outline">
+                    WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- CARD 2 -->
+    <div class="bike-card">
+
+        <div class="bike-image">
+            <img src="tuk2.jfif" alt="Motorbike">
+        </div>
+
+        <div class="bike-content">
+
+            <span class="bike-brand">WATU CREDIT</span>
+
+            <h3>Motorbike Financing</h3>
+
+            <p class="bike-description">
+
+                <strong>Brand New Bike:</strong><br>
+                Deposit: KSh 15,000<br>
+                Daily Payment: KSh 250<br><br>
+
+                <strong>Second-Hand Bike:</strong><br>
+                Deposit: KSh 7,700<br>
+                Daily Payment: KSh 150<br><br>
+
+                <strong>Package Includes:</strong><br>
+                ✅ KSh 3,000 Fuel Voucher<br>
+                ✅ 2 Litres of Engine Oil<br>
+                ✅ 2 Helmets<br>
+                ✅ 2 Reflectors
+
+            </p>
+
+            <div class="bike-buttons">
+
+                <a href="tel:0762290163" class="btn primary">
+                    Call Now
+                </a>
+
+                <a href="https://wa.me/254762290163" class="btn outline">
+                    WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- CARD 3 -->
+    <div class="bike-card">
+
+        <div class="bike-image">
+            <img src="tuk3.jfif" alt="Motorbike">
+        </div>
+
+        <div class="bike-content">
+
+            <span class="bike-brand">WATU CREDIT</span>
+
+            <h3>Motorbike Financing</h3>
+
+            <p class="bike-description">
+
+                <strong>Brand New Bike:</strong><br>
+                Deposit: KSh 15,000<br>
+                Daily Payment: KSh 250<br><br>
+
+                <strong>Second-Hand Bike:</strong><br>
+                Deposit: KSh 7,700<br>
+                Daily Payment: KSh 150<br><br>
+
+                <strong>Package Includes:</strong><br>
+                ✅ KSh 3,000 Fuel Voucher<br>
+                ✅ 2 Litres of Engine Oil<br>
+                ✅ 2 Helmets<br>
+                ✅ 2 Reflectors
+
+            </p>
+
+            <div class="bike-buttons">
+
+                <a href="tel:0762290163" class="btn primary">
+                    Call Now
+                </a>
+
+                <a href="https://wa.me/254762290163" class="btn outline">
+                    WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- CARD 4 -->
+    <div class="bike-card">
+
+        <div class="bike-image">
+            <img src="tuk4.jfif" alt="Motorbike">
+        </div>
+
+        <div class="bike-content">
+
+            <span class="bike-brand">WATU CREDIT</span>
+
+            <h3>Motorbike Financing</h3>
+
+            <p class="bike-description">
+
+                <strong>Brand New Bike:</strong><br>
+                Deposit: KSh 15,000<br>
+                Daily Payment: KSh 250<br><br>
+
+                <strong>Second-Hand Bike:</strong><br>
+                Deposit: KSh 7,700<br>
+                Daily Payment: KSh 150<br><br>
+
+                <strong>Package Includes:</strong><br>
+                ✅ KSh 3,000 Fuel Voucher<br>
+                ✅ 2 Litres of Engine Oil<br>
+                ✅ 2 Helmets<br>
+                ✅ 2 Reflectors
+
+            </p>
+
+            <div class="bike-buttons">
+
+                <a href="tel:0762290163" class="btn primary">
+                    Call Now
+                </a>
+
+                <a href="https://wa.me/254762290163" class="btn outline">
+                    WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- CARD 5 -->
+    <div class="bike-card">
+
+        <div class="bike-image">
+            <img src="tuk5.jfif" alt="Motorbike">
+        </div>
+
+        <div class="bike-content">
+
+            <span class="bike-brand">WATU CREDIT</span>
+
+            <h3>Motorbike Financing</h3>
+
+            <p class="bike-description">
+
+                <strong>Brand New Bike:</strong><br>
+                Deposit: KSh 15,000<br>
+                Daily Payment: KSh 250<br><br>
+
+                <strong>Second-Hand Bike:</strong><br>
+                Deposit: KSh 7,700<br>
+                Daily Payment: KSh 150<br><br>
+
+                <strong>Package Includes:</strong><br>
+                ✅ KSh 3,000 Fuel Voucher<br>
+                ✅ 2 Litres of Engine Oil<br>
+                ✅ 2 Helmets<br>
+                ✅ 2 Reflectors
+
+            </p>
+
+            <div class="bike-buttons">
+
+                <a href="tel:0762290163" class="btn primary">
+                    Call Now
+                </a>
+
+                <a href="https://wa.me/254762290163" class="btn outline">
+                    WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+        <div class="slider-dots">
+
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+
+        <p class="slider-note">
+            *Availability of motorcycle brands may differ across dealerships and Watu branches.
+        </p>
+
+    </div>
+
+</section>
+
+<style>
+
+/*==================== MOTORCYCLE FINANCING ====================*/
+
+.bike-financing{
+
+padding:100px 8%;
+
+background:#f7fbfc;
+
+}
+
+.bike-financing .section-title{
+
+text-align:center;
+
+max-width:700px;
+
+margin:0 auto 60px;
+
+}
+
+.bike-financing h2{
+
+font-size:50px;
+
+font-weight:800;
+
+line-height:1.15;
+
+color:#111827;
+
+margin-bottom:18px;
+
+}
+
+.bike-financing p{
+
+color:#6b7280;
+
+font-size:17px;
+
+}
+
+.bike-slider-wrapper{
+
+display:flex;
+
+align-items:center;
+
+gap:25px;
+
+}
+
+.slider-btn{
+
+width:55px;
+
+height:55px;
+
+border:none;
+
+border-radius:50%;
+
+background:#d8f5f4;
+
+color:#0ea5a8;
+
+font-size:28px;
+
+cursor:pointer;
+
+transition:.3s;
+
+flex-shrink:0;
+
+}
+
+.slider-btn:hover{
+
+background:#14b8a6;
+
+color:#fff;
+
+}
+
+.bike-slider{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:25px;
+
+flex:1;
+
+}
+
+.bike-card{
+
+background:#fff;
+
+border-radius:18px;
+
+overflow:hidden;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.35s;
+
+}
+
+.bike-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.bike-image{
+
+background:#fafafa;
+
+padding:25px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+height:220px;
+
+}
+
+.bike-image img{
+
+max-width:100%;
+
+max-height:180px;
+
+object-fit:contain;
+
+}
+
+.bike-content{
+
+padding:25px;
+
+}
+
+.bike-brand{
+
+display:block;
+
+font-size:13px;
+
+font-weight:700;
+
+letter-spacing:1px;
+
+color:#0ea5a8;
+
+margin-bottom:10px;
+
+}
+
+.bike-content h3{
+
+font-size:25px;
+
+margin-bottom:12px;
+
+color:#111827;
+
+}
+
+.bike-content p{
+
+font-size:15px;
+
+line-height:1.7;
+
+margin-bottom:25px;
+
+}
+
+.bike-buttons{
+
+display:flex;
+
+gap:12px;
+
+flex-wrap:wrap;
+
+}
+
+.btn.outline{
+
+border:2px solid #14b8a6;
+
+color:#14b8a6;
+
+background:transparent;
+
+}
+
+.btn.outline:hover{
+
+background:#14b8a6;
+
+color:#fff;
+
+}
+
+.slider-dots{
+
+display:flex;
+
+justify-content:center;
+
+gap:10px;
+
+margin-top:40px;
+
+}
+
+.slider-dots span{
+
+width:10px;
+
+height:10px;
+
+border-radius:50%;
+
+background:#cbd5e1;
+
+}
+
+.slider-dots span.active{
+
+background:#14b8a6;
+
+width:28px;
+
+border-radius:20px;
+
+}
+
+.slider-note{
+
+text-align:center;
+
+margin-top:20px;
+
+font-size:14px;
+
+color:#94a3b8;
+
+}
+
+@media(max-width:1200px){
+
+.bike-slider{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.bike-financing{
+
+padding:70px 5%;
+
+}
+
+.bike-financing h2{
+
+font-size:38px;
+
+}
+
+.bike-slider-wrapper{
+
+gap:10px;
+
+}
+
+.slider-btn{
+
+display:none;
+
+}
+
+.bike-slider{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+<script>
+
+const slider = document.querySelector(".bike-slider");
+const cards = document.querySelectorAll(".bike-card");
+const prev = document.querySelector(".slider-btn.prev");
+const next = document.querySelector(".slider-btn.next");
+const dots = document.querySelectorAll(".slider-dots span");
+
+let current = 0;
+let autoSlide;
+
+function getCardsPerView(){
+
+    if(window.innerWidth <= 768){
+
+        return 1;
+
+    }
+
+    if(window.innerWidth <= 1200){
+
+        return 2;
+
+    }
+
+    return 4;
+
+}
+
+function updateSlider(){
+
+    const cardsPerView = getCardsPerView();
+
+    const gap = 25;
+
+    const cardWidth = cards[0].offsetWidth + gap;
+
+    slider.style.transition = "transform .6s ease";
+
+    slider.style.transform = `translateX(-${current * cardWidth}px)`;
+
+    dots.forEach(dot => dot.classList.remove("active"));
+
+    if(dots[current]){
+
+        dots[current].classList.add("active");
+
+    }
+
+}
+
+function nextSlide(){
+
+    const max = cards.length - getCardsPerView();
+
+    current++;
+
+    if(current > max){
+
+        current = 0;
+
+    }
+
+    updateSlider();
+
+}
+
+function prevSlide(){
+
+    const max = cards.length - getCardsPerView();
+
+    current--;
+
+    if(current < 0){
+
+        current = max;
+
+    }
+
+    updateSlider();
+
+}
+
+next.addEventListener("click", () => {
+
+    nextSlide();
+
+    restartAuto();
+
+});
+
+prev.addEventListener("click", () => {
+
+    prevSlide();
+
+    restartAuto();
+
+});
+
+dots.forEach((dot,index)=>{
+
+    dot.addEventListener("click",()=>{
+
+        current=index;
+
+        const max = cards.length - getCardsPerView();
+
+        if(current>max){
+
+            current=max;
+
+        }
+
+        updateSlider();
+
+        restartAuto();
+
+    });
+
+});
+
+function startAuto(){
+
+    autoSlide = setInterval(nextSlide,4000);
+
+}
+
+function stopAuto(){
+
+    clearInterval(autoSlide);
+
+}
+
+function restartAuto(){
+
+    stopAuto();
+
+    startAuto();
+
+}
+
+slider.addEventListener("mouseenter",stopAuto);
+
+slider.addEventListener("mouseleave",startAuto);
+
+window.addEventListener("resize",updateSlider);
+
+window.addEventListener("load",()=>{
+
+    updateSlider();
+
+    startAuto();
+
+});
+
+</script>
+
+
+<!--================ HOW TO GET YOUR BIKE ================-->
+
+<section class="bike-process">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                Ready to own your motorcycle with Watu?
+            </h2>
+
+            <p>
+                It is quick and easy. Here's how it works.
+            </p>
+
+        </div>
+
+        <div class="process-grid">
+
+            <div class="process-card">
+
+                <div class="number">1</div>
+
+                <i class='bx bx-store'></i>
+
+                <h3>Visit a Dealer</h3>
+
+                <p>
+                    Visit your nearest Watu dealer and choose the motorcycle or tuk tuk
+                    that fits your business.
+                </p>
+
+            </div>
+
+            <div class="process-card">
+
+                <div class="number">2</div>
+
+                <i class='bx bx-bike'></i>
+
+                <h3>Choose Your Ride</h3>
+
+                <p>
+                    Select your preferred motorcycle,
+                    electric bike or tuk tuk.
+                </p>
+
+            </div>
+
+            <div class="process-card">
+
+                <div class="number">3</div>
+
+                <i class='bx bx-check-circle'></i>
+
+                <h3>Get Approved</h3>
+
+                <p>
+                    Our team processes your application
+                    in as little as two hours.
+                </p>
+
+            </div>
+
+            <div class="process-card apply-card">
+
+                <h3>
+                    Affordable deposits.
+                    Flexible weekly repayments.
+                </h3>
+
+                <a href="#" class="btn primary">
+                    Apply Now
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="requirements">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h3>What do you need?</h3>
+
+        </div>
+
+        <div class="requirements-grid">
+
+            <div class="req-card">
+                <i class='bx bx-id-card'></i>
+                <h4>National ID</h4>
+                <p>A valid Kenyan National ID.</p>
+            </div>
+
+            <div class="req-card">
+                <i class='bx bx-mobile'></i>
+                <h4>Mobile Phone</h4>
+                <p>An active phone number registered in your name.</p>
+            </div>
+
+            <div class="req-card">
+                <i class='bx bx-home'></i>
+                <h4>Proof of Residence</h4>
+                <p>Information about where you live or work.</p>
+            </div>
+
+            <div class="req-card">
+                <i class='bx bx-wallet'></i>
+                <h4>Down Payment</h4>
+                <p>Pay the agreed deposit for your motorcycle.</p>
+            </div>
+
+            <div class="req-card">
+                <i class='bx bx-user-check'></i>
+                <h4>Guarantor</h4>
+                <p>May be required depending on your application.</p>
+            </div>
+
+            <div class="req-card">
+                <i class='bx bx-time-five'></i>
+                <h4>Fast Approval</h4>
+                <p>Receive approval within hours.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="bike-app">
+
+    <div class="container">
+
+        <div class="app-card">
+
+            <div>
+
+                <h2>
+                    Manage your motorcycle loan using the Watu App
+                </h2>
+
+                <p>
+
+                    Check your balance, make repayments,
+                    download statements and stay in control
+                    wherever you are.
+
+                </p>
+
+                <a href="#" class="btn primary">
+
+                    Download App
+
+                </a>
+
+            </div>
+
+            <img src="watu-app.png" alt="Watu App">
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer id="contact">
+
+    <div class="footer-container">
+
+
+        <!-- Brand -->
+
+        <div class="footer-brand">
+
+            <div class="footer-logo">
+                watu
+            </div>
+
+            <p>
+                Watu HQ,<br>
+                Lower Hill Rd,<br>
+                Nairobi, Kenya
+            </p>
+
+        </div>
+
+
+
+        <!-- Watu Global -->
+
+        <div class="footer-section">
+
+            <h4>WATU GLOBAL</h4>
+
+            <div class="footer-links">
+
+                <a href="#">Home</a>
+
+                <a href="#">Our Markets</a>
+
+                <a href="#">About Us</a>
+
+                <a href="#">Our Impact</a>
+
+                <a href="#">Contact Us</a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Markets -->
+
+        <div class="footer-section">
+
+            <h4>OUR MARKETS</h4>
+
+            <div class="footer-links">
+
+                <a href="kenya.html">Kenya</a>
+<a href="tanzania.html">Tanzania</a>
+<a href="uganda.html">Uganda</a>
+<a href="rwanda.html">Rwanda</a>
+<a href="drc.html">DRC</a>
+<a href="nigeria.html">Nigeria</a>
+<a href="sierra-leone.html">Sierra Leone</a>
+<a href="south-africa.html">South Africa</a>
+<a href="mexico.html">Mexico</a>
+<a href="brazil.html">Brazil</a>
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <!-- Company -->
+
+        <div class="footer-section">
+
+            <h4>COMPANY</h4>
+
+            <div class="footer-links">
+
+                <a href="#">Home</a>
+
+                <a href="#">About Us</a>
+
+                <a href="#">Impact</a>
+
+                <a href="#">Newsroom</a>
+
+                <a href="#">Careers</a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Social -->
+
+        <div class="footer-social">
+
+            <span>Follow Us</span>
+
+
+            <a href="#">
+
+                <i class='bx bxl-linkedin'></i>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- Bottom -->
+
+        <div class="footer-bottom">
+
+
+            <p>
+                © 2026 Watu Holdings
+            </p>
+
+
+            <div class="legal-links">
+
+                <a href="#">
+                    Customer Service Statement
+                </a>
+
+
+                <a href="#">
+                    Data Privacy Statement
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</footer>
+<style>
+  /*==================== IMPACT ====================*/
+/*==================== IMPACT ====================*/
+
+.impact{
+
+    padding:120px 8%;
+    background:#f7fff9;
+
+}
+
+
+.stats{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+
+.stat{
+
+    position:relative;
+
+    background:#ffffff;
+
+    border-radius:24px;
+
+    padding:45px 25px;
+
+    text-align:center;
+
+    overflow:hidden;
+
+    border:1px solid #d9f2e3;
+
+    box-shadow:0 15px 35px rgba(16,185,129,.12);
+
+    transition:.35s;
+
+}
+
+
+.stat::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:6px;
+
+    background:#16a34a;
+
+}
+
+
+.stat:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 50px rgba(16,185,129,.22);
+
+}
+
+
+.stat-icon{
+
+    width:75px;
+    height:75px;
+
+    margin:0 auto 20px;
+
+    border-radius:50%;
+
+    background:#dcfce7;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+.stat-icon i{
+
+    font-size:38px;
+
+    color:#16a34a;
+
+}
+
+
+.stat h1{
+
+    font-size:58px;
+
+    color:#15803d;
+
+    line-height:1;
+
+    display:inline-block;
+
+}
+
+
+.stat span{
+
+    font-size:25px;
+
+    font-weight:700;
+
+    color:#16a34a;
+
+}
+
+
+.stat p{
+
+    margin-top:15px;
+
+    color:#555;
+
+    font-weight:500;
+
+}
+    </style>
+    <script>
+const counters = document.querySelectorAll(".counter");
+
+let started = false;
+
+
+function startCounters(){
+
+    if(started) return;
+
+    started = true;
+
+
+    counters.forEach(counter => {
+
+        let target = Number(counter.dataset.target);
+
+        let count = 0;
+
+        let speed = target / 80;
+
+
+        function updateCounter(){
+
+            if(count < target){
+
+                count += speed;
+
+                counter.innerText = Math.ceil(count);
+
+                setTimeout(updateCounter,25);
+
+            }else{
+
+                counter.innerText = target;
+
+            }
+
+        }
+
+
+        updateCounter();
+
+    });
+
+}
+
+
+
+// Detect when impact section appears
+
+const impactSection = document.querySelector(".impact");
+
+
+const observer = new IntersectionObserver((entries)=>{
+
+
+    entries.forEach(entry=>{
+
+
+        if(entry.isIntersecting){
+
+            startCounters();
+
+            observer.disconnect();
+
+        }
+
+
+    });
+
+
+},{
+
+    threshold:0.35
+
+});
+
+
+observer.observe(impactSection);
+    </script>
+
+<script>
+    const menuBtn = document.querySelector(".menu-btn");
+const sidebar = document.querySelector(".sidebar");
+const closeBtn = document.querySelector(".close-btn");
+const overlay = document.querySelector(".overlay");
+
+menuBtn.onclick = () => {
+
+    sidebar.classList.add("active");
+    overlay.classList.add("show");
+
+};
+
+closeBtn.onclick = () => {
+
+    sidebar.classList.remove("active");
+    overlay.classList.remove("show");
+
+};
+
+overlay.onclick = () => {
+
+    sidebar.classList.remove("active");
+    overlay.classList.remove("show");
+
+};
+</script>
+
+</body>
+</html>
