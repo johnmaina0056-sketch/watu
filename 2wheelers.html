@@ -506,7 +506,7 @@ margin-top:20px;
                     Call Now
                 </a>
 
-        <a href="javascript:void(0)" class="btn outline" onclick="openForm()">
+       <a href="javascript:void(0)" class="btn outline" onclick="openWhatsappForm()">
     WhatsApp
 </a>
               <div id="whatsappModal" class="modal">
@@ -713,15 +713,38 @@ margin-top:20px;
 }
                     </style>
 <script>
+
 function openWhatsappForm() {
     document.getElementById("whatsappModal").style.display = "block";
 }
+
 
 function closeWhatsappForm() {
     document.getElementById("whatsappModal").style.display = "none";
 }
 
+
 function sendWhatsapp() {
+
+    let fullname = document.getElementById("fullname");
+    let phone = document.getElementById("phone");
+    let nationalid = document.getElementById("nationalid");
+    let kra = document.getElementById("kra");
+
+    let asset = document.getElementById("asset");
+    let deposit = document.getElementById("deposit");
+
+    let guarantorName = document.getElementById("guarantorName");
+    let guarantorAge = document.getElementById("guarantorAge");
+    let guarantorPhone = document.getElementById("guarantorPhone");
+    let guarantorId = document.getElementById("guarantorId");
+
+    let ref1Name = document.getElementById("ref1Name");
+    let ref1Phone = document.getElementById("ref1Phone");
+
+    let ref2Name = document.getElementById("ref2Name");
+    let ref2Phone = document.getElementById("ref2Phone");
+
 
     let message =
 `*NEW LOAN APPLICATION*
@@ -749,21 +772,29 @@ Phone: ${ref1Phone.value}
 Referee 2: ${ref2Name.value}
 Phone: ${ref2Phone.value}`;
 
+
     window.open(
         "https://wa.me/254762290163?text=" + encodeURIComponent(message),
         "_blank"
     );
 
+
     closeWhatsappForm();
+
 }
+
 
 // Close the modal when clicking outside it
 window.onclick = function(event) {
+
     const modal = document.getElementById("whatsappModal");
+
     if (event.target === modal) {
         closeWhatsappForm();
     }
+
 };
+
 </script>
             </div>
 
