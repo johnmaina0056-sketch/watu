@@ -815,15 +815,14 @@ Phone: ${ref2Phone.value}`;
 
 
 // Close the modal when clicking outside it
-window.onclick = function(event) {
+// Close modal only when clicking the dark background
+document.getElementById("whatsappModal").addEventListener("click", function(event) {
 
-    const modal = document.getElementById("whatsappModal");
-
-    if (event.target === modal) {
+    if (event.target === this) {
         closeWhatsappForm();
     }
 
-};
+});
 
 </script>
 <style>
