@@ -510,8 +510,7 @@ margin-top:20px;
     WhatsApp
 </a>
               <div id="whatsappModal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeForm()">&times;</span>
+    <div class="modal-content"> <span class="close" onclick="closeWhatsappForm()">&times;</span>
 
         <h2>Loan Application</h2>
 
@@ -755,17 +754,20 @@ window.open(
 "_blank"
 );
 
-closeForm();
+function openWhatsappForm() {
+    document.getElementById("whatsappModal").style.display = "block";
 }
 
+function closeWhatsappForm() {
+    document.getElementById("whatsappModal").style.display = "none";
+}
 
-// Close modal when clicking outside it
-window.onclick = function(event){
-    let modal = document.getElementById("whatsappModal");
-    if(event.target == modal){
-        closeForm();
+window.onclick = function(event) {
+    const modal = document.getElementById("whatsappModal");
+    if (event.target === modal) {
+        closeWhatsappForm();
     }
-}
+};
 </script>
             </div>
 
