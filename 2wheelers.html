@@ -713,17 +713,17 @@ margin-top:20px;
 }
                     </style>
 <script>
-    function openForm(){
-    document.getElementById("whatsappModal").style.display="block";
+function openWhatsappForm() {
+    document.getElementById("whatsappModal").style.display = "block";
 }
 
-function closeForm(){
-    document.getElementById("whatsappModal").style.display="none";
+function closeWhatsappForm() {
+    document.getElementById("whatsappModal").style.display = "none";
 }
 
-function sendWhatsapp(){
+function sendWhatsapp() {
 
-let message =
+    let message =
 `*NEW LOAN APPLICATION*
 
 👤 APPLICANT
@@ -749,19 +749,15 @@ Phone: ${ref1Phone.value}
 Referee 2: ${ref2Name.value}
 Phone: ${ref2Phone.value}`;
 
-window.open(
-"https://wa.me/254762290163?text=" + encodeURIComponent(message),
-"_blank"
-);
+    window.open(
+        "https://wa.me/254762290163?text=" + encodeURIComponent(message),
+        "_blank"
+    );
 
-function openWhatsappForm() {
-    document.getElementById("whatsappModal").style.display = "block";
+    closeWhatsappForm();
 }
 
-function closeWhatsappForm() {
-    document.getElementById("whatsappModal").style.display = "none";
-}
-
+// Close the modal when clicking outside it
 window.onclick = function(event) {
     const modal = document.getElementById("whatsappModal");
     if (event.target === modal) {
