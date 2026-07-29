@@ -331,9 +331,9 @@ margin-top:20px;
                     Call Now
                 </a>
 
-                <a href="https://wa.me/254762290163" class="btn outline">
-                    WhatsApp
-                </a>
+           <a href="javascript:void(0)" class="btn outline" onclick="openForm()">
+    WhatsApp
+</a>
 
             </div>
 
@@ -375,9 +375,9 @@ margin-top:20px;
                     Call Now
                 </a>
 
-                <a href="https://wa.me/254762290163" class="btn outline">
-                    WhatsApp
-                </a>
+           <a href="javascript:void(0)" class="btn outline" onclick="openForm()">
+    WhatsApp
+</a>
 
             </div>
 
@@ -419,10 +419,9 @@ margin-top:20px;
                     Call Now
                 </a>
 
-                <a href="https://wa.me/254762290163" class="btn outline">
-                    WhatsApp
-                </a>
-
+               <a href="javascript:void(0)" class="btn outline" onclick="openForm()">
+    WhatsApp
+</a>
             </div>
 
         </div>
@@ -463,9 +462,9 @@ margin-top:20px;
                     Call Now
                 </a>
 
-                <a href="https://wa.me/254762290163" class="btn outline">
-                    WhatsApp
-                </a>
+                 <a href="javascript:void(0)" class="btn outline" onclick="openForm()">
+    WhatsApp
+</a>
 
             </div>
 
@@ -510,22 +509,58 @@ margin-top:20px;
         <a href="javascript:void(0)" class="btn outline" onclick="openForm()">
     WhatsApp
 </a>
-                <div id="whatsappModal" class="modal">
+              <div id="whatsappModal" class="modal">
     <div class="modal-content">
         <span class="close" onclick="closeForm()">&times;</span>
 
-        <h3>Loan Application</h3>
+        <h2>Loan Application</h2>
 
-        <input type="text" id="name" placeholder="Full Name" required>
-        <input type="tel" id="phone" placeholder="Phone Number" required>
-        <input type="text" id="id" placeholder="National ID" required>
-        <input type="text" id="kra" placeholder="KRA PIN" required>
-        <input type="text" id="guarantor" placeholder="Guarantor Name" required>
+        <input type="text" id="fullname" placeholder="Full Name" required>
 
-        <button onclick="sendWhatsapp()">Submit via WhatsApp</button>
+        <input type="tel" id="phone" placeholder="Safaricom Phone Number (M-Pesa)" required>
+
+        <input type="text" id="nationalid" placeholder="National ID Number" required>
+
+        <input type="text" id="kra" placeholder="KRA PIN Certificate Number" required>
+
+        <select id="asset" required>
+            <option value="">Select Asset</option>
+            <option>Motorcycle</option>
+            <option>Tuk Tuk</option>
+            <option>Three Wheeler</option>
+        </select>
+
+        <input type="number" id="deposit" placeholder="Down Payment Amount (KES)" required>
+
+        <hr>
+
+        <h3>Guarantor Details</h3>
+
+        <input type="text" id="guarantorName" placeholder="Guarantor Full Name" required>
+
+        <input type="number" id="guarantorAge" placeholder="Guarantor Age (20-65)" min="20" max="65" required>
+
+        <input type="tel" id="guarantorPhone" placeholder="Guarantor Phone Number" required>
+
+        <input type="text" id="guarantorId" placeholder="Guarantor National ID Number" required>
+
+        <hr>
+
+        <h3>Referees</h3>
+
+        <input type="text" id="ref1Name" placeholder="Referee 1 Name" required>
+
+        <input type="tel" id="ref1Phone" placeholder="Referee 1 Phone" required>
+
+        <input type="text" id="ref2Name" placeholder="Referee 2 Name" required>
+
+        <input type="tel" id="ref2Phone" placeholder="Referee 2 Phone" required>
+
+        <button type="button" onclick="sendWhatsapp()">
+            Submit via WhatsApp
+        </button>
     </div>
 </div>
-
                 <style>
                     .modal{
     display:none;
@@ -587,22 +622,40 @@ function closeForm(){
 
 function sendWhatsapp(){
 
-    let message =
-`*Loan Application*
+let message =
+`*NEW LOAN APPLICATION*
 
-Name: ${document.getElementById("name").value}
-Phone: ${document.getElementById("phone").value}
-National ID: ${document.getElementById("id").value}
-KRA PIN: ${document.getElementById("kra").value}
-Guarantor: ${document.getElementById("guarantor").value}`;
+👤 APPLICANT
+Name: ${fullname.value}
+Phone: ${phone.value}
+National ID: ${nationalid.value}
+KRA PIN: ${kra.value}
 
-    window.open(
-        "https://wa.me/254762290163?text="+encodeURIComponent(message),
-        "_blank"
-    );
+🚗 ASSET
+Asset: ${asset.value}
+Down Payment: KES ${deposit.value}
 
-    closeForm();
+👥 GUARANTOR
+Name: ${guarantorName.value}
+Age: ${guarantorAge.value}
+Phone: ${guarantorPhone.value}
+National ID: ${guarantorId.value}
+
+📞 REFEREES
+Referee 1: ${ref1Name.value}
+Phone: ${ref1Phone.value}
+
+Referee 2: ${ref2Name.value}
+Phone: ${ref2Phone.value}`;
+
+window.open(
+"https://wa.me/254762290163?text=" + encodeURIComponent(message),
+"_blank"
+);
+
+closeForm();
 }
+
 
 // Close modal when clicking outside it
 window.onclick = function(event){
