@@ -754,6 +754,7 @@ function closeWhatsappForm() {
 }
 
 
+// Submit to WhatsApp
 function sendWhatsapp() {
 
     let fullname = document.getElementById("fullname");
@@ -776,37 +777,72 @@ function sendWhatsapp() {
     let ref2Phone = document.getElementById("ref2Phone");
 
 
+    // Check empty fields
+    if (
+        fullname.value.trim() === "" ||
+        phone.value.trim() === "" ||
+        nationalid.value.trim() === "" ||
+        kra.value.trim() === "" ||
+        asset.value.trim() === "" ||
+        deposit.value.trim() === "" ||
+        guarantorName.value.trim() === "" ||
+        guarantorAge.value.trim() === "" ||
+        guarantorPhone.value.trim() === "" ||
+        guarantorId.value.trim() === "" ||
+        ref1Name.value.trim() === "" ||
+        ref1Phone.value.trim() === "" ||
+        ref2Name.value.trim() === "" ||
+        ref2Phone.value.trim() === ""
+    ) {
+
+        alert("Please fill in all fields before submitting.");
+        return;
+
+    }
+
+
     let message =
 `*NEW LOAN APPLICATION*
 
-👤 APPLICANT
+👤 APPLICANT DETAILS
+
 Name: ${fullname.value}
 Phone: ${phone.value}
 National ID: ${nationalid.value}
 KRA PIN: ${kra.value}
 
-🚗 ASSET
+
+🚗 ASSET DETAILS
+
 Asset: ${asset.value}
 Down Payment: KES ${deposit.value}
 
-👥 GUARANTOR
+
+👥 GUARANTOR DETAILS
+
 Name: ${guarantorName.value}
 Age: ${guarantorAge.value}
 Phone: ${guarantorPhone.value}
 National ID: ${guarantorId.value}
 
-📞 REFEREES
-Referee 1: ${ref1Name.value}
+
+📞 REFEREE 1
+
+Name: ${ref1Name.value}
 Phone: ${ref1Phone.value}
 
-Referee 2: ${ref2Name.value}
+
+📞 REFEREE 2
+
+Name: ${ref2Name.value}
 Phone: ${ref2Phone.value}`;
 
 
-    window.open(
-        "https://wa.me/254762290163?text=" + encodeURIComponent(message),
-        "_blank"
-    );
+    let whatsappLink =
+    "https://wa.me/254762290163?text=" + encodeURIComponent(message);
+
+
+    window.open(whatsappLink, "_blank");
 
 
     closeWhatsappForm();
@@ -814,12 +850,14 @@ Phone: ${ref2Phone.value}`;
 }
 
 
-// Close the modal when clicking outside it
-// Close modal only when clicking the dark background
-document.getElementById("whatsappModal").addEventListener("click", function(event) {
 
-    if (event.target === this) {
+// Close only when clicking outside modal content
+document.getElementById("whatsappModal").addEventListener("click", function(event){
+
+    if(event.target === this){
+
         closeWhatsappForm();
+
     }
 
 });
