@@ -507,10 +507,111 @@ margin-top:20px;
                     Call Now
                 </a>
 
-                <a href="https://wa.me/254762290163" class="btn outline">
-                    WhatsApp
-                </a>
+        <a href="javascript:void(0)" class="btn outline" onclick="openForm()">
+    WhatsApp
+</a>
+                <div id="whatsappModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeForm()">&times;</span>
 
+        <h3>Loan Application</h3>
+
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+        <input type="text" id="id" placeholder="National ID" required>
+        <input type="text" id="kra" placeholder="KRA PIN" required>
+        <input type="text" id="guarantor" placeholder="Guarantor Name" required>
+
+        <button onclick="sendWhatsapp()">Submit via WhatsApp</button>
+    </div>
+</div>
+
+                <style>
+                    .modal{
+    display:none;
+    position:fixed;
+    z-index:9999;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.6);
+}
+
+.modal-content{
+    background:#fff;
+    width:90%;
+    max-width:400px;
+    margin:8% auto;
+    padding:20px;
+    border-radius:8px;
+    position:relative;
+}
+
+.modal-content input{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+    box-sizing:border-box;
+}
+
+.modal-content button{
+    width:100%;
+    padding:12px;
+    background:#25D366;
+    color:#fff;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.close{
+    position:absolute;
+    right:15px;
+    top:10px;
+    font-size:25px;
+    cursor:pointer;
+}
+                    </style>
+<script>
+    function openForm(){
+    document.getElementById("whatsappModal").style.display="block";
+}
+
+function closeForm(){
+    document.getElementById("whatsappModal").style.display="none";
+}
+
+function sendWhatsapp(){
+
+    let message =
+`*Loan Application*
+
+Name: ${document.getElementById("name").value}
+Phone: ${document.getElementById("phone").value}
+National ID: ${document.getElementById("id").value}
+KRA PIN: ${document.getElementById("kra").value}
+Guarantor: ${document.getElementById("guarantor").value}`;
+
+    window.open(
+        "https://wa.me/254762290163?text="+encodeURIComponent(message),
+        "_blank"
+    );
+
+    closeForm();
+}
+
+// Close modal when clicking outside it
+window.onclick = function(event){
+    let modal = document.getElementById("whatsappModal");
+    if(event.target == modal){
+        closeForm();
+    }
+}
+</script>
             </div>
 
         </div>
